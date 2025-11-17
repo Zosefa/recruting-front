@@ -1,0 +1,72 @@
+.job-card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 2px solid transparent;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+
+.job-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.company-badge {
+  background: rgba(29, 184, 84, 0.1);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.job-description {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.job-details {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.detail-item {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badge {
+  background: var(--light-gray);
+  color: var(--black);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}

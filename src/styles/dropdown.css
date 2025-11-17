@@ -1,0 +1,39 @@
+.upload-label {
+  position: relative;
+  border: 2.5px dashed var(--primary);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  background: rgba(29, 184, 84, 0.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px; /* Hauteur fixe pour cohérence */
+  gap: 12px;
+  color: var(--gray);
+  overflow: hidden;
+}
+
+.upload-label:hover,
+.upload-label.drag-active {
+  background: rgba(29, 184, 84, 0.1);
+  border-color: var(--primary-dark);
+  box-shadow: 0 10px 30px rgba(29, 184, 84, 0.15);
+  transform: translateY(-4px);
+}
+
+.upload-label svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+}
+
+/* Assure que l'image ne déborde JAMAIS */
+.upload-label img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
